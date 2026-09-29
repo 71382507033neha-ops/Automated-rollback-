@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<h1>Exam Monitoring / Results</h1><table><tr><th>Student</th><th>Exam</th><th>Score</th><th>Status</th></tr>{% for r in rows %}<tr><td>{{r.name}}</td><td>{{r.title}}</td><td>{{r.score}}/{{r.total}}</td><td>{{r.status}}</td></tr>{% endfor %}</table>{% endblock %}

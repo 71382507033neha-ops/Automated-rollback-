@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<div class="card result"><h1>Exam Result</h1><h2>{{score}} / {{total}}</h2><p>Percentage: {{'%.1f'|format(percentage)}}%</p><h3>{{status}}</h3><a class="button" href="{{url_for('student_dashboard')}}">Back to Dashboard</a></div>{% endblock %}

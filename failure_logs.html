@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<h1>Failure & Rollback Logs</h1><table><tr><th>Student</th><th>Exam</th><th>Failure</th><th>Time</th><th>Action</th></tr>{% for r in rows %}<tr><td>{{r.name}}</td><td>{{r.title}}</td><td>{{r.failure_type}}</td><td>{{r.rollback_time}}</td><td>{{r.action_taken}}</td></tr>{% endfor %}</table>{% endblock %}

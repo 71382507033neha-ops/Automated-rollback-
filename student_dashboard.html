@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<h1>Student Dashboard</h1><p>Select an available exam.</p><div class="grid">{% for e in exams %}<div class="card"><h2>{{e.title}}</h2><p>Duration: {{e.duration}} minutes</p><a class="button" href="{{url_for('exam',exam_id=e.id)}}">Start / Resume Exam</a></div>{% endfor %}</div>{% endblock %}
